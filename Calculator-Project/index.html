@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator using javascript - Easy Tutorials</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Create a container to center the calculator on the page -->
+    <div class="container">
+      <!-- Create a calculator div for styling -->
+      <div class="calculator">
+        <!-- Create a form element for calculator input -->
+        <form>
+          <!-- Create a display div for the input field -->
+          <div class="display">
+            <!-- Create an input field for displaying the calculator input -->
+            <input type="text" name="display" />
+          </div>
+          <!-- Create button groups for AC, DE, ., / -->
+          <div>
+            <!-- Create a button to clear the input field -->
+            <input
+              type="button"
+              value="AC"
+              onclick="display.value = '' "
+              class="operator"
+            />
+            <!-- Create a button to delete the last character from input -->
+            <input
+              type="button"
+              value="DE"
+              onclick="display.value =  display.value.toString().slice(0,-1)"
+              class="operator"
+            />
+            <!-- Create a button for the decimal point -->
+            <input
+              type="button"
+              value="."
+              onclick="display.value += '.' "
+              class="operator"
+            />
+            <!-- Create a button for division -->
+            <input
+              type="button"
+              value="/"
+              onclick="display.value += '/' "
+              class="operator"
+            />
+          </div>
+          <!-- Create button groups for numbers 7, 8, 9, and * -->
+          <div>
+            <!-- Create buttons for numbers 7, 8, and 9 -->
+            <input type="button" value="7" onclick="display.value += '7' " />
+            <input type="button" value="8" onclick="display.value += '8' " />
+            <input type="button" value="9" onclick="display.value += '9' " />
+            <!-- Create a button for multiplication -->
+            <input
+              type="button"
+              value="*"
+              onclick="display.value += '*' "
+              class="operator"
+            />
+          </div>
+          <!-- Create button groups for numbers 4, 5, 6, and - -->
+          <div>
+            <!-- Create buttons for numbers 4, 5, and 6 -->
+            <input type="button" value="4" onclick="display.value += '4' " />
+            <input type="button" value="5" onclick="display.value += '5' " />
+            <input type="button" value="6" onclick="display.value += '6' " />
+            <!-- Create a button for subtraction -->
+            <input
+              type="button"
+              value="-"
+              onclick="display.value += '-' "
+              class="operator"
+            />
+          </div>
+          <!-- Create button groups for numbers 1, 2, 3, and + -->
+          <div>
+            <!-- Create buttons for numbers 1, 2, and 3 -->
+            <input type="button" value="1" onclick="display.value += '1' " />
+            <input type="button" value="2" onclick="display.value += '2' " />
+            <input type="button" value="3" onclick="display.value += '3' " />
+            <!-- Create a button for addition -->
+            <input
+              type="button"
+              value="+"
+              onclick="display.value += '+' "
+              class="operator"
+            />
+          </div>
+          <!-- Create a button group for 00, 0, and = -->
+          <div>
+            <!-- Create buttons for numbers 00 and 0 -->
+            <input type="button" value="00" onclick="display.value += '00' " />
+            <input type="button" value="0" onclick="display.value += '0' " />
+            <!-- Create a button for calculating the result -->
+            <input
+              type="button"
+              value="="
+              onclick="display.value = eval(display.value)"
+              class="equal operator"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
