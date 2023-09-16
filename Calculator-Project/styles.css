@@ -1,62 +1,80 @@
-/* Reset default styles and set a background gradient */
+/* Reset default styles and set a background gradient, the asterisk is a universal selector */
+
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
-/* Create a container for centering content */
+/* Create a container for centering content  */
+
 .container {
   width: 100%;
   height: 100vh;
-  background: #97dff2; /* Background color for the entire page */
+  background: rgb(118, 200, 200); /* Background color for the entire page */
   display: flex;
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
+  align-items: center; /*Center vertically*/
+  justify-content: center; /*Center horizontally*/
 }
 
 .calculator {
-  background: #3a4452; /* Background color for the calculator */
+  background: darkslategray; /* Background color for the calculator */
   padding: 20px;
-  border-radius: 10px; /* Rounded corners for the calculator */
+  border-radius: 10px; /* Rounded corners of the calculator */
 }
 
+
+
 /* Style calculator buttons */
+
 .calculator form input {
+
   border: 0;
   outline: 0;
   width: 60px; /* Set button width */
   height: 60px; /* Set button height */
-  border-radius: 10px; /* Rounded corners for buttons */
-  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-  background: transparent; /* Transparent background */
-  font-size: 20px; /* Set font size */
-  color: #fff; /* Text color */
-  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 10px; /* Rounded corners of the buttons */
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+  background: transparent; 
+  font-size: 20px;
+  color: #fff; /* text colour */
+  cursor: pointer; /* change the cursor to pointer on hover*/
   margin: 10px; /* Add margin between buttons */
+
 }
 
-/* Style the display area */
+
+/* Style display area */
+
 form .display {
-  display: flex;
-  justify-content: flex-end; /* Align the content to the right */
-  margin: 20px 0; /* Add margin above and below the display area */
+  display:flex;
+  justify-content: flex-end;  /* Align the content to the right  */
+  margin: 20px 0; /* Adds margin above and below the display area */
+
 }
 
 form .display input {
-  text-align: right; /* Right-align text within the input field */
-  flex: 1; /* Allow the input field to expand to fill available space */
-  font-size: 45px; /* Set font size for the display */
-  box-shadow: none; /* Remove shadow from the display area */
+  text-align: right; /* Right- align text within the input field */
+  flex: 1; /* Allows the inpit field to expand to fill available space */
+  font-size: 45px; /*Set font size for the display */
+  box-shadow: none; /*remove shadow */
 }
 
 /* Style the equal button */
+
 form input.equal {
-  width: 145px; /* Set width for the equal button */
+  width: 140px; /* set width for the = button  */
+
 }
 
-/* Style operator buttons */
+
+/* style the operaton buttons */
+
 form input.operator {
-  color: #33ffd8; /* Set color for operator buttons */
+  color:rgb(6, 25, 68);  /* set color for oprator buttons */
+
 }
+
+
+

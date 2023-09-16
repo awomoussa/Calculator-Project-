@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator using javascript - Easy Tutorials</title>
+    <title>Calculator Project</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Create a container to center the calculator on the page -->
+    <!-- Create a container to center the calculator on the page-->
     <div class="container">
-      <!-- Create a calculator div for styling -->
+      <!-- Create a div called calculator for styling-->
       <div class="calculator">
-        <!-- Create a form element for calculator input -->
+        <!-- Create a form element for calculator input-->
+      
         <form>
-          <!-- Create a display div for the input field -->
           <div class="display">
-            <!-- Create an input field for displaying the calculator input -->
+            <!-- Create an input field for displaying the calculator input-->
+
             <input type="text" name="display" />
           </div>
           <!-- Create button groups for AC, DE, ., / -->
@@ -26,13 +29,15 @@
               onclick="display.value = '' "
               class="operator"
             />
-            <!-- Create a button to delete the last character from input -->
+
+            <!--Create a button to delete the last character from input-->
             <input
               type="button"
               value="DE"
               onclick="display.value =  display.value.toString().slice(0,-1)"
               class="operator"
             />
+
             <!-- Create a button for the decimal point -->
             <input
               type="button"
@@ -40,7 +45,8 @@
               onclick="display.value += '.' "
               class="operator"
             />
-            <!-- Create a button for division -->
+
+            <!-- Create a button for the division  -->
             <input
               type="button"
               value="/"
@@ -48,13 +54,17 @@
               class="operator"
             />
           </div>
+
           <!-- Create button groups for numbers 7, 8, 9, and * -->
           <div>
-            <!-- Create buttons for numbers 7, 8, and 9 -->
+            <!--Create buttons for 7,8, and 9-->
             <input type="button" value="7" onclick="display.value += '7' " />
+
             <input type="button" value="8" onclick="display.value += '8' " />
+
             <input type="button" value="9" onclick="display.value += '9' " />
-            <!-- Create a button for multiplication -->
+
+            <!--Create a button for multiplication-->
             <input
               type="button"
               value="*"
@@ -62,13 +72,17 @@
               class="operator"
             />
           </div>
+
           <!-- Create button groups for numbers 4, 5, 6, and - -->
           <div>
-            <!-- Create buttons for numbers 4, 5, and 6 -->
+            <!--Create buttons for 4,5, and 6-->
             <input type="button" value="4" onclick="display.value += '4' " />
+
             <input type="button" value="5" onclick="display.value += '5' " />
+
             <input type="button" value="6" onclick="display.value += '6' " />
-            <!-- Create a button for subtraction -->
+
+            <!--Create a button for substraction-->
             <input
               type="button"
               value="-"
@@ -76,13 +90,17 @@
               class="operator"
             />
           </div>
+
           <!-- Create button groups for numbers 1, 2, 3, and + -->
           <div>
-            <!-- Create buttons for numbers 1, 2, and 3 -->
+            <!--Create buttons for 1,2, and 3-->
             <input type="button" value="1" onclick="display.value += '1' " />
+
             <input type="button" value="2" onclick="display.value += '2' " />
+
             <input type="button" value="3" onclick="display.value += '3' " />
-            <!-- Create a button for addition -->
+
+            <!--Create a button for addition-->
             <input
               type="button"
               value="+"
@@ -90,12 +108,15 @@
               class="operator"
             />
           </div>
-          <!-- Create a button group for 00, 0, and = -->
+
+          <!-- Create button groups for numbers 00, 0, and = -->
           <div>
-            <!-- Create buttons for numbers 00 and 0 -->
+            <!--Create buttons for 00, 0 -->
             <input type="button" value="00" onclick="display.value += '00' " />
+
             <input type="button" value="0" onclick="display.value += '0' " />
-            <!-- Create a button for calculating the result -->
+
+            <!--Create a button for calculating the result-->
             <input
               type="button"
               value="="
@@ -108,7 +129,3 @@
     </div>
   </body>
 </html>
-
-
-
-
